@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Creditos" size="100.000000 159.574463" />
+    <ImageTarget name="Fase_1" size="100.000000 159.574463" />
+    <ImageTarget name="Menu" size="100.000000 159.574463" />
+  </Tracking>
+</QCARConfig>
