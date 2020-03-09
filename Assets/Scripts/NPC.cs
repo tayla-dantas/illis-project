@@ -60,6 +60,7 @@ public class NPC : MonoBehaviour
         {
             StartCoroutine(OpenLevel("win"));
             animator.SetBool("saved", true);
+            GetComponent<AudioSource>().Play();
         }
     }
 
