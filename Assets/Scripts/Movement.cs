@@ -77,7 +77,8 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.name == "Orc" )
         {
             anim.SetTrigger("attack");
-            Destroy(collision.gameObject);            
+            Destroy(collision.gameObject);
+            GetComponent<AudioSource>().Play();
         }
         else if (collision.gameObject.name == "Cat")
         {
