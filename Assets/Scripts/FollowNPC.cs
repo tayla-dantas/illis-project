@@ -6,7 +6,7 @@ public class FollowNPC : MonoBehaviour
 {
     public GameObject player;
     public float movementSpeed;
-    public float attack;
+    public int attack;
     private Rigidbody rig;
     private Animator animE;
     private SpriteRenderer render;

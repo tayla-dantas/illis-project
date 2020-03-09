@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class NPC : MonoBehaviour
 {
-    public float vida;
-    private float enemyAttack;
+    public int vida;
+    private int enemyAttack;
     private Animator enemyAnim;
     public float damageCD;
     public float cd;
@@ -14,6 +14,7 @@ public class NPC : MonoBehaviour
     private Animator animator;
     private GameObject player;
     // Start is called before the first frame update
+	
     void Start()
     {
         GameObject enemy = GameObject.Find("Orc");
@@ -64,12 +65,17 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void setVida(float vidaCurada)
+    public void setVida(int vidaCurada)
     {
         vida = vida + vidaCurada;
     }
 
-    public IEnumerator OpenLevel(string level)
+	public int getVida()
+	{
+		Debug.Log("essa é a vida do script da npc" + vida.ToString());
+		return System.Convert.ToInt16(vida);
+	}
+	public IEnumerator OpenLevel(string level)
     {
         //GetComponent<AudioSource>().PlayOneShot(beep);
         yield return new WaitForSeconds(0.8f);

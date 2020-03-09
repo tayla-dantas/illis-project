@@ -87,7 +87,7 @@ public class Movement : MonoBehaviour
         }
         else if(collision.gameObject.name == "Cura")
         {
-            npc.GetComponent<NPC>().setVida(50);
+            npc.GetComponent<NPC>().setVida(15);
             Destroy(collision.gameObject);
         }
     }
